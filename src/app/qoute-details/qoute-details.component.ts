@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-qoute-details',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./qoute-details.component.css']
 })
 export class QouteDetailsComponent implements OnInit {
+
+  @Input() qoute: Qoutes;
+  @Output() isComplete = new EventEmitter<boolean>();
 
   constructor() { }
 

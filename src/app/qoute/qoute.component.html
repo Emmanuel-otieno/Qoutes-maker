@@ -9,7 +9,7 @@
         <button  (click)='toggleDetails(i)' class="btn btn-primary">show qoutes</button>
         
           <div>
-            <app-qoute-details ></app-qoute-details>
+            <app-qoute-details *ngIf='qoute.showDescription' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)' ></app-qoute-details>
           </div>
         </div>
       </div>
