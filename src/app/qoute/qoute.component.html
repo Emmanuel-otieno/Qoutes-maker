@@ -3,11 +3,15 @@
     <hr>
     <div class="row">
       <div class="col-md-6">
+        <div *ngFor='let qoute of qoutes;let i = index'>
+        <div>
+        <h4 id={{i}} appStrikethrough>{{qoute.name}} due on {{qoute.completeDate|date|uppercase}}</h4>
+        <button  (click)='toggleDetails(i)' class="btn btn-primary">show qoutes</button>
         
           <div>
             <app-qoute-details ></app-qoute-details>
           </div>
-        
+        </div>
       </div>
       <div class="col-md-6">
         <app-qoute-form ></app-qoute-form>
