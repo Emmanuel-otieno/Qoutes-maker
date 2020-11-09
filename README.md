@@ -12,15 +12,16 @@ this is a app that help a user to create and post his/her qoutes
 
 ## Tecnology used
 
-Typescript 
-Bootstrap
-HTML
-JAvascript
+* Typescript 
+* Bootstrap
+* HTML
+* JAvascript
+* css
+## Bugs
 
-## Running end-to-end tests
+none
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Lincence
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+MIT( http://www.tldrlegal.com/license/mit-license)
+Copyright (c) [2020] [Emmanuel]
