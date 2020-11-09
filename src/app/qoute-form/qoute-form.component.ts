@@ -10,10 +10,10 @@ import { NgForm } from '@angular/forms';
 export class QouteFormComponent implements OnInit {
 
   newQoute = new Qoutes(0,"","",new Date());
-  @Output() addQuote = new EventEmitter<Qoutes>();
+  @Output() addQoute = new EventEmitter<Qoutes>();
 
   submitQoute(form:NgForm){
-    this.addQuote.emit(this.newQoute);
+    this.addQoute.emit(this.newQoute);
     form.resetForm()
   }
 
