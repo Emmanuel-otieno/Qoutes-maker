@@ -14,10 +14,10 @@
         </div>
       </div>
       <div class="col-md-6">
-        <app-qoute-form ></app-qoute-form>
+        <app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form>
       </div>
     </div>
     
     
-    <p ></p>
+    <p *ngIf='quotes.length > 1'>You have too many quotes</p>
  </div>

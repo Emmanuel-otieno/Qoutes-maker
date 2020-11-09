@@ -16,7 +16,15 @@ export class QouteComponent implements OnInit {
    
   ];
 
+  deleteQoute(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.qoutes[index].name}?`)
 
+      if (toDelete){
+        this.qoutes.splice(index,1)
+      }
+    }
+  }
 
   toggleDetails(index){
     this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
