@@ -37,11 +37,11 @@ completeQuote(isComplete, index){
 }
 
 addNewQoute(qoute){
-  let quoteLength = this.qoutes.length;
-  qoute.id = quoteLength+1;
+  let qouteLength = this.qoutes.length;
+  qoute.id = qouteLength+1;
   qoute.completeDate = new Date(qoute.completeDate)
-  let quoteObject = new Qoutes(qoute.id,qoute.name,qoute.description,qoute.completeDate)
-  this.qoutes.push(quoteObject)
+  let qouteObject = new Qoutes(qoute.id,qoute.name,qoute.description,qoute.completeDate)
+  this.qoutes.push(qouteObject)
 }
 
   constructor() { }
