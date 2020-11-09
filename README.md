@@ -12,11 +12,11 @@ this is a app that help a user to create and post his/her qoutes
 
 ## Tecnology used
 
-* Typescript 
-* Bootstrap
-* HTML
-* JAvascript
-* css
+* Typescript - making page function as required
+* Bootstrap - aid in styling web page
+* HTML - writting data in our web page
+* JAvascript - making the page function as requied
+* css - styling my page
 ## Bugs
 
 none
